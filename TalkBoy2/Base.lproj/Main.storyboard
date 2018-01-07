@@ -57,10 +57,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-Qs-uon">
                                 <rect key="frame" x="163" y="96" width="49" height="30"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordTapped:" destination="T9z-vm-BiX" eventType="touchUpInside" id="gFE-75-nBV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDR-rW-Bcw">
                                 <rect key="frame" x="172" y="158" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="T9z-vm-BiX" eventType="touchUpInside" id="BnV-yV-kPt"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-1Q-Hce">
                                 <rect key="frame" x="32" y="220" width="311" height="30"/>
@@ -71,6 +77,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-mw-Py8">
                                 <rect key="frame" x="172.5" y="282" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="T9z-vm-BiX" eventType="touchUpInside" id="eos-Ce-fLz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,6 +96,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MQN-m2-wye"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="wzX-mw-Py8" id="qxl-rk-D6G"/>
+                        <outlet property="nameTextField" destination="gDI-1Q-Hce" id="JsK-UG-hwG"/>
+                        <outlet property="playButton" destination="rDR-rW-Bcw" id="fiJ-TK-buG"/>
+                        <outlet property="recordButton" destination="PRH-Qs-uon" id="G4k-br-IGh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ww-37-YoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
