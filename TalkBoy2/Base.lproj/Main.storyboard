@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f20-ys-3PF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Talkboy 2-->
         <scene sceneID="q5F-m3-oDZ">
             <objects>
-                <tableViewController id="Erb-Pi-fzB" sceneMemberID="viewController">
+                <tableViewController id="Erb-Pi-fzB" customClass="ClipTableViewController" customModule="TalkBoy2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hws-a7-mgc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VJF-LG-TMa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="VJF-LG-TMa">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJF-LG-TMa" id="m3y-hj-7nW">
@@ -33,20 +33,58 @@
                             <outlet property="delegate" destination="Erb-Pi-fzB" id="Ckj-hm-9rp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UWr-8i-eNg"/>
+                    <navigationItem key="navigationItem" title="Talkboy 2" id="UWr-8i-eNg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="egW-Ii-neW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u2I-zh-0Dk">
+                            <connections>
+                                <segue destination="T9z-vm-BiX" kind="show" id="HTj-TP-zLO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92a-on-92v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="460" y="109"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Clip View Controller-->
         <scene sceneID="a5U-9Q-65t">
             <objects>
-                <viewController id="T9z-vm-BiX" sceneMemberID="viewController">
+                <viewController id="T9z-vm-BiX" customClass="AddClipViewController" customModule="TalkBoy2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ywZ-cn-8sX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-Qs-uon">
+                                <rect key="frame" x="163" y="96" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDR-rW-Bcw">
+                                <rect key="frame" x="172" y="158" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-1Q-Hce">
+                                <rect key="frame" x="32" y="220" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-mw-Py8">
+                                <rect key="frame" x="172.5" y="282" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wzX-mw-Py8" firstAttribute="top" secondItem="gDI-1Q-Hce" secondAttribute="bottom" constant="32" id="0NP-Vh-pf1"/>
+                            <constraint firstItem="rDR-rW-Bcw" firstAttribute="top" secondItem="PRH-Qs-uon" secondAttribute="bottom" constant="32" id="51r-zP-xKe"/>
+                            <constraint firstItem="MQN-m2-wye" firstAttribute="trailing" secondItem="gDI-1Q-Hce" secondAttribute="trailing" constant="32" id="ANT-Cs-flK"/>
+                            <constraint firstItem="PRH-Qs-uon" firstAttribute="centerX" secondItem="ywZ-cn-8sX" secondAttribute="centerX" id="Bly-Vm-nfg"/>
+                            <constraint firstItem="wzX-mw-Py8" firstAttribute="centerX" secondItem="ywZ-cn-8sX" secondAttribute="centerX" id="Msa-sb-f2W"/>
+                            <constraint firstItem="gDI-1Q-Hce" firstAttribute="top" secondItem="rDR-rW-Bcw" secondAttribute="bottom" constant="32" id="YAJ-7T-JyN"/>
+                            <constraint firstItem="rDR-rW-Bcw" firstAttribute="centerX" secondItem="ywZ-cn-8sX" secondAttribute="centerX" id="bM3-2e-LbC"/>
+                            <constraint firstItem="gDI-1Q-Hce" firstAttribute="leading" secondItem="MQN-m2-wye" secondAttribute="leading" constant="32" id="fWy-jC-6GI"/>
+                            <constraint firstItem="PRH-Qs-uon" firstAttribute="top" secondItem="MQN-m2-wye" secondAttribute="top" constant="32" id="yMk-LW-Bql"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MQN-m2-wye"/>
                     </view>
                 </viewController>
