@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4C3EE259200199820054DCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EE258200199820054DCBD /* AppDelegate.swift */; };
-		4C3EE25B200199820054DCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EE25A200199820054DCBD /* ViewController.swift */; };
 		4C3EE25E200199820054DCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3EE25C200199820054DCBD /* Main.storyboard */; };
 		4C3EE261200199820054DCBD /* TalkBoy2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EE25F200199820054DCBD /* TalkBoy2.xcdatamodeld */; };
 		4C3EE263200199820054DCBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3EE262200199820054DCBD /* Assets.xcassets */; };
 		4C3EE266200199820054DCBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3EE264200199820054DCBD /* LaunchScreen.storyboard */; };
+		4C3EE26E200199F20054DCBD /* ClipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EE26D200199F20054DCBD /* ClipTableViewController.swift */; };
+		4C3EE27020019A2D0054DCBD /* AddClipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3EE26F20019A2D0054DCBD /* AddClipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C3EE255200199820054DCBD /* TalkBoy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkBoy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3EE258200199820054DCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C3EE25A200199820054DCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C3EE25D200199820054DCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C3EE260200199820054DCBD /* TalkBoy2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TalkBoy2.xcdatamodel; sourceTree = "<group>"; };
 		4C3EE262200199820054DCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3EE265200199820054DCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3EE267200199820054DCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3EE26D200199F20054DCBD /* ClipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTableViewController.swift; sourceTree = "<group>"; };
+		4C3EE26F20019A2D0054DCBD /* AddClipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				4C3EE258200199820054DCBD /* AppDelegate.swift */,
-				4C3EE25A200199820054DCBD /* ViewController.swift */,
+				4C3EE26D200199F20054DCBD /* ClipTableViewController.swift */,
+				4C3EE26F20019A2D0054DCBD /* AddClipViewController.swift */,
 				4C3EE25C200199820054DCBD /* Main.storyboard */,
 				4C3EE262200199820054DCBD /* Assets.xcassets */,
 				4C3EE264200199820054DCBD /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3EE26E200199F20054DCBD /* ClipTableViewController.swift in Sources */,
 				4C3EE261200199820054DCBD /* TalkBoy2.xcdatamodeld in Sources */,
-				4C3EE25B200199820054DCBD /* ViewController.swift in Sources */,
+				4C3EE27020019A2D0054DCBD /* AddClipViewController.swift in Sources */,
 				4C3EE259200199820054DCBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
